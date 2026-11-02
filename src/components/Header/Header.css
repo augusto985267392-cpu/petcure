@@ -166,6 +166,23 @@
         border: 1.5px solid var(--turquesa-escuro);
         border-radius: 36px;
         box-shadow: var(--sombra-button-hover);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+
+        pointer-events: none;
+    }
+
+    .mobile-menu.aberto {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     .mobile-menu-item {
@@ -224,5 +241,12 @@
 
     .mobile-menu > :last-child {
     margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mobile-menu {
+        transition: none;
+        transform: none;
+    }
 }
 }
