@@ -1,3 +1,16 @@
+.about-us-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+.about-us-page > .about-us {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .about-us {
     padding: 10.25rem clamp(24px, 4.1vw, 64px) 8.5rem;
     background-color: var(--background-about-us);
@@ -71,6 +84,17 @@
     font-family: "DM Sans", sans-serif;
     font-size: clamp(1rem, 1.18vw, 1.15rem);
     line-height: 1.32;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .about-us__purpose {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .about-us__purpose:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgb(15 56 59 / 22%);
+    }
 }
 
 .about-us__purpose {
@@ -251,9 +275,6 @@
         margin-top: 2.4rem;
     }
 
-    .about-us__container {
-        width: min(100%, 760px);
-    }
 }
 
 @media (max-width: 420px) {

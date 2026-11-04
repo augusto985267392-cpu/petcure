@@ -5,8 +5,10 @@ import Services from "./components/Services/Services";
 function App() {
   return (
     <main>
-      <Header />
-      <AboutUs />
+      <div className="about-us-page">
+        <Header variant="about-us" />
+        <AboutUs />
+      </div>
       <Services />
     </main>
   );
