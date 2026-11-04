@@ -6,8 +6,8 @@ import img3 from "../../assets/images/image-clinic-waiting-area.png";
 export default function Gallery() {
     const photos = [
         { src: img1, alt: "Recepção" },
-        { src: img2, alt: "Lab" },
-        { src: img3, alt: "Espera" },
+        { src: img2, alt: "Ambiente interno da clínica" },
+        { src: img3, alt: "Estrutura de atendimento veterinário" },
     ];
 
     return (
