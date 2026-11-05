@@ -4,10 +4,13 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Gallery from "./components/Gallery/Gallery";
+import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator";
 
 function App() {
   return (
     <main>
+      <ScrollIndicator />
+
       <Header />
       <Hero />
 
